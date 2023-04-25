@@ -1,4 +1,3 @@
-// app/utils/types.server.ts
 export type RegisterForm = {
   email: string;
   password: string;

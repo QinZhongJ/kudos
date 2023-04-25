@@ -1,7 +1,6 @@
-// app/routes/logout.ts
-import type { ActionFunction, LoaderFunction } from '@remix-run/node';
-import { redirect } from '@remix-run/node';
-import { logout } from '~/utils/auth.server';
+import type { ActionFunction, LoaderFunction } from "@remix-run/node";
+import { redirect } from "@remix-run/node";
+import { logout } from "~/utils/auth.server";
 
 export const action: ActionFunction = async ({ request }) => logout(request);
-export const loader: LoaderFunction = async () => redirect('/');
+export const loader: LoaderFunction = async () => redirect("/");
